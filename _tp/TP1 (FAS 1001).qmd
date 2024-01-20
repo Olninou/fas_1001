@@ -26,3 +26,73 @@ You can add options to executable code like this
 ```
 
 The `echo: false` option disables the printing of code (only output is displayed).
+
+# Description des codes Git utilisés
+
+Les codes que nous avons mobilisés se trouvent au sein des captures d'écran ci-dessous :
+
+![](images/Codes%20Git%201.png)
+
+![](images/Codes%20Git%202.png)
+
+![](images/Codes%20Git%203.png)
+
+## Étape 1 du TP :
+
+### Transférer le fichier de Github à notre ordinateur
+
+#### cd desktop :
+
+Pour installer le fichier présent dans Github sur notre ordinateur, nous avons utilisé la commande "cd desktop" afin d'installer le fichier sur notre bureau. Cette commande permet de déterminer un "répertoire" (ici le bureau/desktop) dans lequel placer le fichier.
+
+#### git init :
+
+Nous avons utilisé la commande "git init" afin de configurer notre répertoire. Cette configuration a permis au répéertoire de devenir un dépôt Git. De cette manière, il est devenu possible d'avoir un suivi des versions de notre projet ou encore de gérer les branches et les commits.
+
+#### git clone :
+
+Nous avons ensuite utilisé la commande "git clone" afin d'importer le fichier sur notre ordinateur. Pour ce faire, nous avons copier coller le lien Github du fichier à la suite de ce code. Cette commande a permis de cloner le fichier présent sur Github.
+
+## 
+
+### Renommer le fichier importé
+
+#### mv fas_1001 fas_1001_Saffioti
+
+Afin de renommer notre fichier, nous avons utilisé la commande "mv" suivie de l'ancien nom du fichier et du nouveau nom que nous voulions lui attribuer. Le fichier a ainsi été nommé "fas_1001_Saffioti".
+
+## Étape 2 du TP :
+
+### Créer une nouvelle branche
+
+#### cd fas_1001_Saffioti :
+
+Afin de créer une nouvelle branche, nous avons dans un premier temps utilisé la commande "cd" suivi du nom de notre fichier pour accéder au répertoire de notre projet.
+
+#### git checkout -b fas_1001_Saffioti
+
+Nous avons ensuite pu créer une nouvelle branche avec la commande "git checkout -b" suivie du nom que nous voulions donner à la branche (ici : fas_1001_Saffioti).
+
+## Étapes 4 et 6 du TP :
+
+### Ajouter les enregistrements des modifications de notre fichier dans notre historique Git
+
+#### git add . :
+
+La commande "git add ." nous a permis d'ajouter les modifications de notre fichier au sein de notre historique git et dans notre répertoire de travail. Cette commande permet de faire un état des modifications apportées au fichier, avant de les enregistrer au sein d'un commit.
+
+#### git commit -m "Premier commit" et git commit -m "Création du document de travail de session" :
+
+Nous avons utilisé la commande "git commit -m" suivie du "nom que nous souhaitions donné à notre commit" (ici "Premier commit" et "Création du document de travail de session"). Ce code nous a permis de créer un commit avec les modifications que nous avons apporté à notre fichier. Ce commit a pris en considération l'état de notre fichier, avec les changements que nous y avons apporté. En somme, il a permis l'enregistrement définitif des modifications du fichier.
+
+#### git branch :
+
+Nous avons utilisé la commande "git branch" afin de vérifier que nos commits étaient effectués au sein de la bonne branche (à savoir fas_1001_Saffioti).
+
+## Étape 7 du TP :
+
+### Générer l'historique des commits
+
+#### git log :
+
+Nous avons utilisé la commande "git log" afin d'afficher une liste détaillant les commits que nous avons générés. Ils sont affichés du plus récent au plus ancien. L'auteur des commits, l'identifiant des commits, la date et l'heure des commits, ainsi que le message des commits sont exposés.

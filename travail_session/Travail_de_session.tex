@@ -179,7 +179,7 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
-  pdftitle={TP1 (FAS 1001)},
+  pdftitle={Travail de session},
   pdfauthor={Olivia Saffioti},
   colorlinks=true,
   linkcolor={blue},
@@ -188,13 +188,13 @@
   urlcolor={Blue},
   pdfcreator={LaTeX via pandoc}}
 
-\title{TP1 (FAS 1001)}
+\title{Travail de session}
 \author{Olivia Saffioti}
 \date{2024-01-22}
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, frame hidden, interior hidden, enhanced, breakable, borderline west={3pt}{0pt}{shadecolor}, sharp corners]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, boxrule=0pt, interior hidden, borderline west={3pt}{0pt}{shadecolor}, frame hidden, sharp corners, enhanced]}{\end{tcolorbox}}\fi
 
 \hypertarget{quarto}{%
 \subsection{Quarto}\label{quarto}}
@@ -229,138 +229,21 @@ You can add options to executable code like this
 The \texttt{echo:\ false} option disables the printing of code (only
 output is displayed).
 
-\hypertarget{description-des-codes-git-utilisuxe9s}{%
-\section{Description des codes Git
-utilisés}\label{description-des-codes-git-utilisuxe9s}}
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
 
-Les codes que nous avons mobilisés se trouvent au sein des captures
-d'écran ci-dessous :
+\hypertarget{probluxe9matique-de-recherche}{%
+\subsection{Problématique de
+recherche}\label{probluxe9matique-de-recherche}}
 
-\includegraphics{images/Codes Git 1.png}
+\hypertarget{donnuxe9es-et-muxe9thodes}{%
+\subsection{Données et méthodes}\label{donnuxe9es-et-muxe9thodes}}
 
-\includegraphics{images/Codes Git 2.png}
+\hypertarget{ruxe9sultats}{%
+\subsection{Résultats}\label{ruxe9sultats}}
 
-\includegraphics{images/Codes Git 3.png}
-
-\hypertarget{uxe9tape-1-du-tp}{%
-\subsection{Étape 1 du TP :}\label{uxe9tape-1-du-tp}}
-
-\hypertarget{transfuxe9rer-le-fichier-de-github-uxe0-notre-ordinateur}{%
-\subsubsection{Transférer le fichier de Github à notre
-ordinateur}\label{transfuxe9rer-le-fichier-de-github-uxe0-notre-ordinateur}}
-
-\hypertarget{cd-desktop}{%
-\paragraph{cd desktop :}\label{cd-desktop}}
-
-Pour installer le fichier présent dans Github sur notre ordinateur, nous
-avons utilisé la commande ``cd desktop'' afin d'installer le fichier sur
-notre bureau. Cette commande permet de déterminer un ``répertoire'' (ici
-le bureau/desktop) dans lequel placer le fichier.
-
-\hypertarget{git-init}{%
-\paragraph{git init :}\label{git-init}}
-
-Nous avons utilisé la commande ``git init'' afin de configurer notre
-répertoire. Cette configuration a permis au répéertoire de devenir un
-dépôt Git. De cette manière, il est devenu possible d'avoir un suivi des
-versions de notre projet ou encore de gérer les branches et les commits.
-
-\hypertarget{git-clone}{%
-\paragraph{git clone :}\label{git-clone}}
-
-Nous avons ensuite utilisé la commande ``git clone'' afin d'importer le
-fichier sur notre ordinateur. Pour ce faire, nous avons copier coller le
-lien Github du fichier à la suite de ce code. Cette commande a permis de
-cloner le fichier présent sur Github.
-
-\hypertarget{section}{%
-\subsection{}\label{section}}
-
-\hypertarget{renommer-le-fichier-importuxe9}{%
-\subsubsection{Renommer le fichier
-importé}\label{renommer-le-fichier-importuxe9}}
-
-\hypertarget{mv-fas_1001-fas_1001_saffioti}{%
-\paragraph{mv fas\_1001
-fas\_1001\_Saffioti}\label{mv-fas_1001-fas_1001_saffioti}}
-
-Afin de renommer notre fichier, nous avons utilisé la commande ``mv''
-suivie de l'ancien nom du fichier et du nouveau nom que nous voulions
-lui attribuer. Le fichier a ainsi été nommé ``fas\_1001\_Saffioti''.
-
-\hypertarget{uxe9tape-2-du-tp}{%
-\subsection{Étape 2 du TP :}\label{uxe9tape-2-du-tp}}
-
-\hypertarget{cruxe9er-une-nouvelle-branche}{%
-\subsubsection{Créer une nouvelle
-branche}\label{cruxe9er-une-nouvelle-branche}}
-
-\hypertarget{cd-fas_1001_saffioti}{%
-\paragraph{cd fas\_1001\_Saffioti :}\label{cd-fas_1001_saffioti}}
-
-Afin de créer une nouvelle branche, nous avons dans un premier temps
-utilisé la commande ``cd'' suivi du nom de notre fichier pour accéder au
-répertoire de notre projet.
-
-\hypertarget{git-checkout--b-fas_1001_saffioti}{%
-\paragraph{git checkout -b
-fas\_1001\_Saffioti}\label{git-checkout--b-fas_1001_saffioti}}
-
-Nous avons ensuite pu créer une nouvelle branche avec la commande ``git
-checkout -b'' suivie du nom que nous voulions donner à la branche (ici :
-fas\_1001\_Saffioti).
-
-\hypertarget{uxe9tapes-4-et-6-du-tp}{%
-\subsection{Étapes 4 et 6 du TP :}\label{uxe9tapes-4-et-6-du-tp}}
-
-\hypertarget{ajouter-les-enregistrements-des-modifications-de-notre-fichier-dans-notre-historique-git}{%
-\subsubsection{Ajouter les enregistrements des modifications de notre
-fichier dans notre historique
-Git}\label{ajouter-les-enregistrements-des-modifications-de-notre-fichier-dans-notre-historique-git}}
-
-\hypertarget{git-add-.}{%
-\paragraph{git add . :}\label{git-add-.}}
-
-La commande ``git add .'' nous a permis d'ajouter les modifications de
-notre fichier au sein de notre historique git et dans notre répertoire
-de travail. Cette commande permet de faire un état des modifications
-apportées au fichier, avant de les enregistrer au sein d'un commit.
-
-\hypertarget{git-commit--m-premier-commit-et-git-commit--m-cruxe9ation-du-document-de-travail-de-session}{%
-\paragraph{git commit -m ``Premier commit'' et git commit -m ``Création
-du document de travail de session''
-:}\label{git-commit--m-premier-commit-et-git-commit--m-cruxe9ation-du-document-de-travail-de-session}}
-
-Nous avons utilisé la commande ``git commit -m'' suivie du ``nom que
-nous souhaitions donné à notre commit'' (ici ``Premier commit'' et
-``Création du document de travail de session''). Ce code nous a permis
-de créer un commit avec les modifications que nous avons apporté à notre
-fichier. Ce commit a pris en considération l'état de notre fichier, avec
-les changements que nous y avons apporté. En somme, il a permis
-l'enregistrement définitif des modifications du fichier.
-
-\hypertarget{git-branch}{%
-\paragraph{git branch :}\label{git-branch}}
-
-Nous avons utilisé la commande ``git branch'' afin de vérifier que nos
-commits étaient effectués au sein de la bonne branche (à savoir
-fas\_1001\_Saffioti).
-
-\hypertarget{uxe9tape-7-du-tp}{%
-\subsection{Étape 7 du TP :}\label{uxe9tape-7-du-tp}}
-
-\hypertarget{guxe9nuxe9rer-lhistorique-des-commits}{%
-\subsubsection{Générer l'historique des
-commits}\label{guxe9nuxe9rer-lhistorique-des-commits}}
-
-\hypertarget{git-log}{%
-\paragraph{git log :}\label{git-log}}
-
-Nous avons utilisé la commande ``git log'' afin d'afficher une liste
-détaillant les commits que nous avons générés. Ils sont affichés du plus
-récent au plus ancien. L'auteur des commits, l'identifiant des commits,
-la date et l'heure des commits, ainsi que le message des commits sont
-exposés.
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
 
 
 
