@@ -194,7 +194,9 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, breakable, borderline west={3pt}{0pt}{shadecolor}, interior hidden, enhanced, sharp corners, boxrule=0pt]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, enhanced, sharp corners, breakable, interior hidden, frame hidden, borderline west={3pt}{0pt}{shadecolor}]}{\end{tcolorbox}}\fi
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \hypertarget{quarto}{%
 \subsection{Quarto}\label{quarto}}
@@ -210,28 +212,15 @@ When you click the \textbf{Render} button a document will be generated
 that includes both content and the output of embedded code. You can
 embed code like this:
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\DecValTok{1} \SpecialCharTok{+} \DecValTok{1}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-[1] 2
-\end{verbatim}
-
 You can add options to executable code like this
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{image: Desktop/fas\_1001\_Saffioti/\_tp/images/Codes Git 1.png}
-\NormalTok{alt: Codes 1}
 
-\NormalTok{image: Desktop/fas\_1001\_Saffioti/\_tp/images/Codes Git 2.png}
-\NormalTok{alt: Codes 2}
+\NormalTok{\textless{}\textless{}\textless{}\textless{}\textless{}\textless{}\textless{} HEAD}
+\NormalTok{=======}
 
-\NormalTok{image:Desktop/fas\_1001\_Saffioti/\_tp/images/Codes Git 3.png}
-\NormalTok{alt: Codes 3}
+\NormalTok{\textgreater{}\textgreater{}\textgreater{}\textgreater{}\textgreater{}\textgreater{}\textgreater{} c3f3b4f (Images 2)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -242,8 +231,13 @@ output is displayed).
 \section{Description des codes Git
 utilisés}\label{description-des-codes-git-utilisuxe9s}}
 
-\hypertarget{uxe9tape-1-du-tp}{%
-\subsection{Étape 1 du TP :}\label{uxe9tape-1-du-tp}}
+\hypertarget{images}{%
+\subsection{Images :}\label{images}}
+
+\includegraphics{//Users/oliviasaffioti/Desktop/fas_1001_Saffioti/_tp/Codes Git 1.png}
+\includegraphics{//Users/oliviasaffioti/Desktop/fas_1001_Saffioti/_tp/Codes Git 2.png}
+\includegraphics{//Users/oliviasaffioti/Desktop/fas_1001_Saffioti/_tp/Codes Git 3.png}
+\#\# Étape 1 du TP :
 
 \hypertarget{transfuxe9rer-le-fichier-de-github-uxe0-notre-ordinateur}{%
 \subsubsection{Transférer le fichier de Github à notre
