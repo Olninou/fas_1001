@@ -1,0 +1,96 @@
+---
+title: "TP2-FAS 1001-Saffioti"
+format: pdf
+author: Olivia Saffioti
+editor: visual
+date: 05/02/2024
+---
+
+## Introduction
+
+« La tendance à la baisse (du taux de participation des Québécois) observée depuis plusieurs années s'explique en grande partie par le fait que les électeurs des plus récentes cohortes votent moins que ceux des cohortes antérieures. Les jeunes seraient donc en partie responsables du déclin de la participation électorale au Québec » a expliqué l'organisation Élections Québec dans un article de presse de LEDEVOIR en 2018 (Rettino-Parazelli 2018). Ces propos mettent l'emphase sur un phénomène typique des démocraties contemporaines : les jeunes constituent le groupe social qui vote le moins (Rettino-Parazelli 2018). Or, la littérature scientifique établit un lien entre le vote et la partisanerie. En effet, de nos jours, les personnes âgées sont généralement plus loyales envers un parti politique que les plus jeunes. Selon la théorie de la mobilisation cognitive, les plus jeunes sont aujourd'hui plus critiques vis -à -vis des partis politiques en raison de la transformation des médias de masse, ou encore d'un accès plus facile à la connaissance (Lisi 2015, 496). Ils sont donc plus volatiles et ont une identité partisane plus faible (Lisi 2015, 495). Cependant, des recherches américaines ont montré que le niveau de partisanerie des jeunes ne dépendait pas forcément de l'âge mais plutôt de leur génération d'appartenance (ou cohortes) (Converse 1976; Abramson 1976). En effet, le niveau de partisanerie des jeunes américains déclinerait de plus en plus an fil des générations (Abramson 1976). De plus, les études comparatives existantes ont donné peu d'attention aux dynamiques des identités partisanes au fil du temps (Lisi 2015, 494). Or, les dynamique temporelles sont importantes pour comprendre l'évolution de l'attachement partisan, surtout au vu de la mutation des sociétés contemporaines (Lisi 2015, 494). Il semble donc pertinent de mener une étude transversale comparative sur le niveau de partisanerie entre deux cohortes de jeunes. Cette méthode vise à "connaître les situations, les pratiques, et les opinions des personnes interrogées à un moment donné"(Paugam 2010). Il apparaît également intéressant de se centrer sur un autre pays que les États-Unis. C'est pourquoi, nous avons décidé de nous centrer sur le cas du Canada, dont le contexte politique et culturel montre une importance de la partisanerie au sein des provinces comme le Québec (Veilleux 2022) . Ainsi, nous étudierons comment l'identité partisane des jeunes canadiens a évolué d'une cohorte à une autre. Pour ce faire, nous mobiliserons deux sondages : celui des élections canadiennes de 1988 et celui des élections canadiennes de 2021. Nous avons choisi ces deux bases de données car elles mobilisent les mêmes variables (âge, niveau d'identification partisane, etc.) et sont faciles d'accès. En outre, elles nous permettront d'étudier le niveau de partisanerie de deux cohortes de jeunes, séparées à plusieurs dizaines d'années d'intervale. Nous comparerons les données de ces sondages afin d'analyser comment le niveau de partisanerie des jeunes a évolué. Pour cela, nous croiserons ces deux bases de données et élaborerons un graphique afin de visualiser les données.
+
+## Hypothèse
+
+L'hypothèse défendue par notre étude est celle que les jeunes de 1988 étaient plus partisans que les jeunes de 2021.
+
+## Données et méthodes
+
+Tout d'abord, nous avons nettoyé nos bases de données. Nous avons commencé par créer de nouvelles bases de données avec seulement les variables que nous voulions conserver. Il s'agit des bases de données Elections_2021_nouveau et Elections_1988_new. Nous avons décidé de conserver les variables de l'age des répondants, leur niveau d'identification à un parti politique, le parti politique auquel ils s'affilient, et l'année de naissance. L'année de naissance a été conservée uniquement au sein de la base de données Elections_1988_new afin de calculer l'âge des répondants en fonction de cette variable. En effet, la base de données de 2021 avait déjà une variable indiquant l'age des répondants, ce qui n'était pas le cas de la banque de données de 1988. Ainsi, nous avons soustrait l'année de naissance à 1988 (l'année du sondage) via la fonction " mutate" afin d'obtenir les âges de tous les répondants. Nous avons ensuite renommé les variables "Niveau_identification", "age_du_répondant", "intérêt_élections_fédérales", et "Identité_partisane" grâce à la fonction "rename". Par la suite, pour la base de données de 2021, nous avons supprimé toutes les valeurs de la variable Niveau_identification qui étaient égales à NA (soit dont la donnée était inexistente). Pour cela nous avons mobilisé la fonction "filter". Nous avons fait de même avec la base de données de 1988 pour les variables age_du_répondant et Niveau_identification. Nous avons également conservé uniquement les âges entre 18 et 30 ans dans les deux bases de données (soit les répondants considérés comme "jeunes"). Dans la base de données de 1988, nous avons recodé la variable Niveau_identification afin d'harmoniser son échelle de mesure avec celle de la base de données de 2021. Pour cela, nous avons utilisé la fonction "mutate" et "recode". Puis, nous avons recoder à nouveau cette variable dans les deux bases de données afin que le graphique que nous allions produire plus tard apparaisse plus clair et compréhensible. Ainsi, l'échelle de mesure de la variable Niveau_identification est devenue dans les deux bases de données : 1 = Ne sais pas/refus, 2 = pas très fort, 3= assez fort, 4= très fort; alors qu'auparavant le code était inversé comme suit : 4 = ne sais pas/refus, 3 = pas très fort, 2 = assez fort, 1 = très fort. Par la suite, nous avons créé une nouvelle colonne dans les bases de données de 2021 et de 1988 qui mettait en exergue le pourcentage de fois où les jeunes de 18 à 30 ans se sont identifiés aux niveaux de partisanerie. Il s'agissait de savoir combien de jeunes, en pourcentage, ont répondu 1, 2, 3, ou 4 (les valeurs de l'échelle de mesure). Cela nous permettait de rendre compte des proportions de jeunes qui ont un niveau de partisanerie très fort, assez fort, pas très fort, et de la proportion de jeunes qui ne savaient pas ou qui ont refusé de répondre. Pour cela nous avons mobilisé les fonctions "group_by", "summarise" et "nrow". En outre, nous avions besoin de ces pourcentages afin de générer un graphique clair, représentant la relation entre les cohortes de jeunes et le niveau de partisanerie. Enfin, nous avons créé une autre colonne dans chaque base de données afin de spécifier l'année du sondage à laquelle les données sont référées. Cela nous permettait par la suite de fusionner nos bases de données, tout en repérant quelles données sont issues de 1988 et de 2021. Finalement, nous avons croisé nos deux bases de données à partir des variables "Pourcentage", "Niveau_identification", et "année du sondage". Pour cela nous avons utilisé la fonction "merge". Nous avons élaboré notre graphique à partir de cette nouvelle base de données.
+
+## Résultats
+
+Nous avons élaboré le graphique ci-dessous à partir de la base de données croisant les sondages de 1988 et de 2021. Elle se nomme "Données_pourcentage_Elections_croisées". À l'intérieur de cette base de données, 2902 observations étaient représentées sous forme de 7 pourcentages.
+
+![Graphique comparant les niveaux de partisanerie des cohortes de jeunes](/Users/oliviasaffioti/Desktop/Graph2bis.png)
+
+Les résultats exposés dans le graphique indiquent qu'il semblerait y avoir une tendance pour des niveaux de partisanrie plus élevés en 2021 par rapport à 1988. En effet, en 2021, 2,4% des jeunes ne savaient pas ou ont refusé de communiquer leur niveau de partisanerie. Comparativement, aucun jeune de 18 à 30 ans n'a pas répondu ou a refusé de communiquer son degré de partisanerie. En outre, 16% des jeunes en 2021 s'identifiaient à un niveau de partisanerie "pas très fort", contre 21,7% des jeunes en 1988. Il y avait donc plus de jeunes en 1988 qui avaient un niveau de partisanerie "pas très fort". De surcroît, 53,8 % des jeunes de 2021 s'identifiaient à un niveau de partisanerie "assez fort", contre 58,6% en 1988. Il y avait donc davantage de jeunes avec une identité partisane "assez forte" en 1988 par rapport à 2021. En revanche, 27,8% des jeunes en 2021 s'identifiaient à un niveau de partisanerie "très fort", contre 19,6% des jeunes en 1988. Autrement dit, il y avait plus de jeunes dont l'identité partisane était "très forte" en 2021 comparé à 1988.
+
+Ainsi, il semblerait que notre hypothèse soit inférée. Cependant, ces résultats pourraient résulter du fait que les échantillons des bases de données de 1988 et de 2021 ne contiennent pas le même nombre d'observations. En effet, la base de données de 2021 contient 2566 observations après nettoyage contre 336 observations pour la base de données de 1988. Si les échantillons avaient été plus proportionnels, nous aurions pu trouver une autre tendance quant à l'évolution du niveau de partisanerie des jeunes entre 1988 et 2021.
+
+## Annexe
+
+```{r}
+
+# Libraries
+
+library(tidyverse)
+
+# Définir le répertoire de travail et importer les bases de données sur Rstudio
+
+setwd("/Users/oliviasaffioti/Desktop/fas_1001_Saffioti/_tp/TP2 (FAS 1001)")
+getwd()
+
+Elections_2021 <- read.csv("Canadian_Election_Study_2021.csv", sep = ",")
+Elections_1988 <- read.csv("Canadian_Election_Study_1988.csv", sep =",")
+
+#Nettoyer la base de données de 2021
+
+Elections_2021_nouveau <- Elections_2021[, c("cps21_yob", "cps21_yob_2003_age", "cps21_age", "cps21_interest_gen_1", "cps21_interest_elxn_1", "cps21_fed_id", "cps21_fed_id_str")]
+Elections_2021_nouveau <- Elections_2021_nouveau %>% rename("age_du_répondant" = "cps21_age", "Niveau_identification" = "cps21_fed_id_str", "Identité_partisane" = "cps21_fed_id")
+Elections_2021_nouveau = Elections_2021_nouveau |> filter(!is.na(Niveau_identification))
+Elections_2021_nouveau = Elections_2021_nouveau |> filter(age_du_répondant <= 30)
+Elections_2021_nouveau <- Elections_2021_nouveau %>% mutate(Niveau_identification = recode(Niveau_identification, "1" = "4", "2" = "3", "3" = "2", "4" = "1"))
+Elections_2021_nouveau2.0 <- Elections_2021_nouveau %>% group_by(Niveau_identification) %>% summarise(Pourcentage = n() / nrow(Elections_2021_nouveau) * 100)
+Elections_2021_nouveau2.0["année du sondage"] = 2021
+
+# Nettoyer la base de données de 1988
+
+Elections_1988_new <- Elections_1988 [, c("yrbirth", "xl4", "xl5")]
+Elections_1988_new <- Elections_1988_new %>% mutate(age = 1988 - yrbirth)
+Elections_1988_new2 <- Elections_1988_new %>% mutate(Niveau_identification = recode(xl5, "1" = "1", "3" = "2", "5" = "3", "9" = "4", "8" = "4" ))
+Elections_1988_new2 <- Elections_1988_new2 %>% rename("année_de_naissance" ="yrbirth", "age_du_répondant" = "age", "Identité_partisane" = "xl4", "Codage_originel_niveau_identification" = "xl5")
+Elections_1988_new2 = Elections_1988_new2 |> filter(!is.na(Niveau_identification))
+Elections_1988_new2 = Elections_1988_new2 |> filter(!is.na(age_du_répondant))
+Elections_1988_new2 = Elections_1988_new2 |> filter(age_du_répondant <= 30)
+Elections_1988_new2 <- Elections_1988_new2 %>% mutate(Niveau_identification = recode(Niveau_identification, "1" = "4", "2" = "3", "3" = "2", "4" = "1"))
+Elections_1988_new2 = Elections_1988_new2 |> filter(age_du_répondant != 16)
+Elections_1988_new2.0 <- Elections_1988_new2 %>% group_by(Niveau_identification) %>% summarise(Pourcentage = n() / nrow(Elections_1988_new2) * 100)
+Elections_1988_new2.0["année du sondage"] = 1988
+
+# Croiser les bases de données
+
+Données_pourcentage_Elections_croisées = merge(Elections_1988_new2.0, Elections_2021_nouveau2.0, by =c("Niveau_identification", "année du sondage", "Pourcentage"), all.x = TRUE, all.y = TRUE)
+
+# Générer le graphique
+
+Graph2 <- ggplot(data = Données_pourcentage_Elections_croisées, aes(x = as.factor(Niveau_identification), y = Pourcentage, fill = as.factor(`année du sondage`))) + geom_bar(stat = "identity", position = "dodge", color = "black") + labs(title = "Comparaison du niveau de partisanerie entre les jeunes de 1988 et de 2021", x = "Niveau de partisanerie", y = "Pourcentage de jeunes de 18-30 ans", fill = "Année du sondage") + scale_fill_manual(values = c("deeppink3", "darkturquoise")) + scale_x_discrete(labels = c("Ne sais pas/refus", "Pas très fort", "Assez fort", "Très fort"))
+
+print(Graph2)
+
+
+```
+
+## Bibliograhie
+
+Abramson, Paul R. 1976. « Generational Change and the Decline of Party Identification in America: 1952-1974 ». *The American Political Science Review* 70 (2): 469‑78. <https://doi.org/10.2307/1959651>.
+
+Converse, Philip E. 1976. "The Dynamics of Party Support: Cohort-Analyzing Party Identification". Sage.
+
+Lisi, M.2015. "Partisanship and age effects in recent democracies: Southern Europe from a comparative perspective". *Comparative European Politics* 13(4) : 493-513. <https://doi.org/10.1057/cep.2014.3>
+
+Paugam, Serge. 2010. « Méthodes ». In *Les 100 mots de la sociologie,* , 23‑43. Paris : Presses Universitaires de France. <https://www.cairn.info/les-100-mots-de-la-sociologie--9782130574057-p-23.htm>.
+
+Rettino-Parazelli, K. 2018. "Les 18-35 ans : Portrait-robot d'une génération courtisée par les partis politiques". *Le Devoir*, 17 août 2018. <https://www.ledevoir.com/politique/quebec/534713/portrait-robot-d-une-generation>
+
+Veilleux, Noémie. 2022. « La partisanerie ne fait pas avancer le Québec ». *La Presse*, 31 août 2022. <https://www.lapresse.ca/debats/opinions/2022-08-31/la-partisanerie-ne-fait-pas-avancer-le-quebec.php>.
