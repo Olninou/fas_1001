@@ -195,7 +195,7 @@ entre la cohorte de 1988 et de 2021 (Option 2)}
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, enhanced, frame hidden, interior hidden, borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, sharp corners]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, boxrule=0pt, interior hidden, sharp corners, borderline west={3pt}{0pt}{shadecolor}, enhanced, frame hidden]}{\end{tcolorbox}}\fi
 
 \hypertarget{introduction}{%
 \subsection{Introduction}\label{introduction}}
@@ -256,60 +256,66 @@ L'hypothèse défendue par notre étude est celle que les jeunes de 1988
 \hypertarget{donnuxe9es-et-muxe9thodes}{%
 \subsection{Données et méthodes}\label{donnuxe9es-et-muxe9thodes}}
 
-Tout d'abord, nous avons nettoyé nos bases de données. Nous avons
-commencé par créer de nouvelles bases de données avec seulement les
-variables que nous voulions conserver. Il s'agit des bases de données
-Elections\_2021\_nouveau et Elections\_1988\_new. Nous avons décidé de
-conserver les variables de l'age des répondants, leur niveau
-d'identification à un parti politique, le parti politique auquel ils
-s'affilient, et l'année de naissance. L'année de naissance a été
-conservée uniquement au sein de la base de données Elections\_1988\_new
-afin de calculer l'âge des répondants en fonction de cette variable. En
-effet, la base de données de 2021 avait déjà une variable indiquant
-l'age des répondants, ce qui n'était pas le cas de la banque de données
-de 1988. Ainsi, nous avons soustrait l'année de naissance à 1988
-(l'année du sondage) via la fonction '' mutate'' afin d'obtenir les âges
-de tous les répondants. Nous avons ensuite renommé les variables
-``Niveau\_identification'', ``age\_du\_répondant'',
-``intérêt\_élections\_fédérales'', et ``Identité\_partisane'' grâce à la
-fonction ``rename''. Par la suite, pour la base de données de 2021, nous
-avons supprimé toutes les valeurs de la variable Niveau\_identification
-qui étaient égales à NA (soit dont la donnée était inexistente). Pour
-cela nous avons mobilisé la fonction ``filter''. Nous avons fait de même
-avec la base de données de 1988 pour les variables age\_du\_répondant et
-Niveau\_identification. Nous avons également conservé uniquement les
-âges entre 18 et 30 ans dans les deux bases de données (soit les
-répondants considérés comme ``jeunes''). Dans la base de données de
-1988, nous avons recodé la variable Niveau\_identification afin
-d'harmoniser son échelle de mesure avec celle de la base de données de
-2021. Pour cela, nous avons utilisé la fonction ``mutate'' et
-``recode''. Puis, nous avons recoder à nouveau cette variable dans les
-deux bases de données afin que le graphique que nous allions produire
-plus tard apparaisse plus clair et compréhensible. Ainsi, l'échelle de
-mesure de la variable Niveau\_identification est devenue dans les deux
-bases de données : 1 = Ne sais pas/refus, 2 = pas très fort, 3= assez
-fort, 4= très fort; alors qu'auparavant le code était inversé comme suit
-: 4 = ne sais pas/refus, 3 = pas très fort, 2 = assez fort, 1 = très
-fort. Par la suite, nous avons créé une nouvelle colonne dans les bases
-de données de 2021 et de 1988 qui mettait en exergue le pourcentage de
-fois où les jeunes de 18 à 30 ans se sont identifiés aux niveaux de
-partisanerie. Il s'agissait de savoir combien de jeunes, en pourcentage,
-ont répondu 1, 2, 3, ou 4 (les valeurs de l'échelle de mesure). Cela
-nous permettait de rendre compte des proportions de jeunes qui ont un
-niveau de partisanerie très fort, assez fort, pas très fort, et de la
-proportion de jeunes qui ne savaient pas ou qui ont refusé de répondre.
-Pour cela nous avons mobilisé les fonctions ``group\_by'', ``summarise''
-et ``nrow''. En outre, nous avions besoin de ces pourcentages afin de
-générer un graphique clair, représentant la relation entre les cohortes
-de jeunes et le niveau de partisanerie. Enfin, nous avons créé une autre
-colonne dans chaque base de données afin de spécifier l'année du sondage
-à laquelle les données sont référées. Cela nous permettait par la suite
-de fusionner nos bases de données, tout en repérant quelles données sont
-issues de 1988 et de 2021. Finalement, nous avons croisé nos deux bases
-de données à partir des variables ``Pourcentage'',
-``Niveau\_identification'', et ``année du sondage''. Pour cela nous
-avons utilisé la fonction ``merge''. Nous avons élaboré notre graphique
-à partir de cette nouvelle base de données.
+Dans nos bases de données, nous avons voulu mobiliser uniquement les
+variables de l'âge du répondant et du niveau d'identification partisane.
+Nous avons également conservé la variable du parti politique auquel les
+répondants se sont affiliés. En revanche, nous ne l'utiliserons pas dans
+le croisement de nos données (nous l'avons conservée uniquement dans le
+cadre du travail final de ce cours). Tout d'abord, nous avons nettoyé
+nos bases de données. Nous avons commencé par créer de nouvelles bases
+de données avec seulement les variables que nous voulions conserver. Il
+s'agit des bases de données Elections\_2021\_nouveau et
+Elections\_1988\_new. Nous avons décidé de conserver les variables de
+l'age des répondants, leur niveau d'identification à un parti politique,
+le parti politique auquel ils s'affilient, et l'année de naissance.
+L'année de naissance a été conservée uniquement au sein de la base de
+données Elections\_1988\_new afin de calculer l'âge des répondants en
+fonction de cette variable. En effet, la base de données de 2021 avait
+déjà une variable indiquant l'age des répondants, ce qui n'était pas le
+cas de la banque de données de 1988. Ainsi, nous avons soustrait l'année
+de naissance à 1988 (l'année du sondage) via la fonction '' mutate''
+afin d'obtenir les âges de tous les répondants. Nous avons ensuite
+renommé les variables ``Niveau\_identification'',
+``age\_du\_répondant'', ``intérêt\_élections\_fédérales'', et
+``Identité\_partisane'' grâce à la fonction ``rename''. Par la suite,
+pour la base de données de 2021, nous avons supprimé toutes les valeurs
+de la variable Niveau\_identification qui étaient égales à NA (soit dont
+la donnée était inexistente). Pour cela nous avons mobilisé la fonction
+``filter''. Nous avons fait de même avec la base de données de 1988 pour
+les variables age\_du\_répondant et Niveau\_identification. Nous avons
+également conservé uniquement les âges entre 18 et 30 ans dans les deux
+bases de données (soit les répondants considérés comme ``jeunes'' en
+sociologie). Dans la base de données de 1988, nous avons recodé la
+variable Niveau\_identification afin d'harmoniser son échelle de mesure
+avec celle de la base de données de 2021. Pour cela, nous avons utilisé
+la fonction ``mutate'' et ``recode''. Puis, nous avons recoder à nouveau
+cette variable dans les deux bases de données afin que le graphique que
+nous allions produire plus tard apparaisse plus clair et compréhensible.
+Ainsi, l'échelle de mesure de la variable Niveau\_identification est
+devenue dans les deux bases de données : 1 = Ne sais pas/refus, 2 = pas
+très fort, 3= assez fort, 4= très fort; alors qu'auparavant le code
+était inversé comme suit : 4 = ne sais pas/refus, 3 = pas très fort, 2 =
+assez fort, 1 = très fort. Par la suite, nous avons créé une nouvelle
+colonne dans les bases de données de 2021 et de 1988 qui mettait en
+exergue le pourcentage de fois où les jeunes de 18 à 30 ans se sont
+identifiés aux niveaux de partisanerie. Il s'agissait de savoir combien
+de jeunes, en pourcentage, ont répondu 1, 2, 3, ou 4 (les valeurs de
+l'échelle de mesure). Cela nous permettait de rendre compte des
+proportions de jeunes qui ont un niveau de partisanerie très fort, assez
+fort, pas très fort, et de la proportion de jeunes qui ne savaient pas
+ou qui ont refusé de répondre. Pour cela nous avons mobilisé les
+fonctions ``group\_by'', ``summarise'' et ``nrow''. En outre, nous
+avions besoin de ces pourcentages afin de générer un graphique clair,
+représentant la relation entre les cohortes de jeunes et le niveau de
+partisanerie. Enfin, nous avons créé une autre colonne dans chaque base
+de données afin de spécifier l'année du sondage à laquelle les données
+sont référées. Cela nous permettait par la suite de fusionner nos bases
+de données, tout en repérant quelles données sont issues de 1988 et de
+2021. Finalement, nous avons croisé nos deux bases de données à partir
+des variables ``Pourcentage'', ``Niveau\_identification'', et ``année du
+sondage''. Pour cela nous avons utilisé la fonction ``merge''. Nous
+avons élaboré notre graphique à partir de cette nouvelle base de
+données.
 
 \hypertarget{ruxe9sultats}{%
 \subsection{Résultats}\label{ruxe9sultats}}
@@ -335,18 +341,20 @@ Les résultats exposés dans le graphique indiquent qu'il semblerait y
 avoir une tendance pour des niveaux de partisanrie plus élevés en 2021
 par rapport à 1988. En effet, en 2021, 2,4\% des jeunes ne savaient pas
 ou ont refusé de communiquer leur niveau de partisanerie.
-Comparativement, aucun jeune de 18 à 30 ans n'a pas répondu ou a refusé
-de communiquer son degré de partisanerie. En outre, 16\% des jeunes en
-2021 s'identifiaient à un niveau de partisanerie ``pas très fort'',
-contre 21,7\% des jeunes en 1988. Il y avait donc plus de jeunes en 1988
-qui avaient un niveau de partisanerie ``pas très fort''. De surcroît,
-53,8 \% des jeunes de 2021 s'identifiaient à un niveau de partisanerie
-``assez fort'', contre 58,6\% en 1988. Il y avait donc davantage de
-jeunes avec une identité partisane ``assez forte'' en 1988 par rapport à
-2021. En revanche, 27,8\% des jeunes en 2021 s'identifiaient à un niveau
-de partisanerie ``très fort'', contre 19,6\% des jeunes en 1988.
-Autrement dit, il y avait plus de jeunes dont l'identité partisane était
-``très forte'' en 2021 comparé à 1988.
+Comparativement, en 1988, aucun jeune de 18 à 30 ans n'a pas répondu ou
+a refusé de communiquer son degré de partisanerie. En outre, 16\% des
+jeunes en 2021 s'identifiaient à un niveau de partisanerie ``pas très
+fort'', contre 21,7\% des jeunes en 1988. Il y avait donc plus de jeunes
+en 1988 qui avaient un niveau de partisanerie ``pas très fort''. De
+surcroît, 53,8 \% des jeunes de 2021 s'identifiaient à un niveau de
+partisanerie ``assez fort'', contre 58,6\% en 1988. Il y avait donc
+davantage de jeunes avec une identité partisane ``assez forte'' en 1988
+par rapport à 2021. Cependant la différence entre 2021 et 1988 ne semble
+pas très importante (seulement 4,8\% de différence). Ajoutons que 27,8\%
+des jeunes en 2021 s'identifiaient à un niveau de partisanerie ``très
+fort'', contre 19,6\% des jeunes en 1988. Autrement dit, il y avait plus
+de jeunes dont l'identité partisane était ``très forte'' en 2021 comparé
+à 1988.
 
 Ainsi, il semblerait que notre hypothèse soit inférée. Les résultats
 obtenus sont contraires à ceux des études antérieures menées aux
@@ -356,7 +364,11 @@ le même nombre d'observations. En effet, la base de données de 2021
 contient 2566 observations après nettoyage contre 336 observations pour
 la base de données de 1988. Si les échantillons avaient été plus
 proportionnels, nous aurions pu trouver une autre tendance quant à
-l'évolution du niveau de partisanerie des jeunes entre 1988 et 2021.
+l'évolution du niveau de partisanerie des jeunes entre 1988 et 2021. Il
+serait également pertinent de compléter notre étude avec d'autres bases
+de données issues de contextes temporels différents. Cela nous
+permettrait de mieux rendre compte de l'évolution du niveau de
+partisanerie des jeunes au fil des générations.
 
 \hypertarget{annexe}{%
 \subsection{Annexe}\label{annexe}}
