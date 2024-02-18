@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.13)  13 FEB 2024 11:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.13)  18 FEB 2024 01:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**TP2_FAS1001_Saffioti.tex
-(./TP2_FAS1001_Saffioti.tex
+**tp3-fas1001-Saffioti.tex
+(./tp3-fas1001-Saffioti.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22>
 (/usr/local/texlive/2023/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -956,7 +956,7 @@ Package: xurl 2022/01/09 v 0.10 modify URL breaks
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 189.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 19
-6.
+5.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -966,53 +966,52 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count332
 \l__pdf_internal_box=\box90
 )
-(./TP2_FAS1001_Saffioti.aux)
-\openout1 = `TP2_FAS1001_Saffioti.aux'.
+No file tp3-fas1001-Saffioti.aux.
+\openout1 = `tp3-fas1001-Saffioti.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 196.
-LaTeX Font Info:    ... okay on input line 196.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 196.
-LaTeX Font Info:    ... okay on input line 196.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 196.
-LaTeX Font Info:    ... okay on input line 196.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 196.
-LaTeX Font Info:    ... okay on input line 196.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 196.
-LaTeX Font Info:    ... okay on input line 196.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 196.
-LaTeX Font Info:    ... okay on input line 196.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 196.
-LaTeX Font Info:    ... okay on input line 196.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 196.
-LaTeX Font Info:    ... okay on input line 196.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 196.
-LaTeX Font Info:    ... okay on input line 196.
-Package scrbase Info: activating english \abstractname on input line 196.
-Package scrbase Info: activating english \partname on input line 196.
-Package scrbase Info: activating english \figurename on input line 196.
-Package scrbase Info: activating english \tablename on input line 196.
-Package scrbase Info: activating english \contentsname on input line 196.
-Package scrbase Info: activating english \listfigurename on input line 196.
-Package scrbase Info: activating english \listtablename on input line 196.
-Package scrbase Info: activating english \refname on input line 196.
-Package scrbase Info: activating english \indexname on input line 196.
-LaTeX Info: Redefining \microtypecontext on input line 196.
-Package microtype Info: Applying patch `item' on input line 196.
-Package microtype Info: Applying patch `toc' on input line 196.
-Package microtype Info: Applying patch `eqnum' on input line 196.
-Package microtype Info: Applying patch `footnote' on input line 196.
-Package microtype Info: Applying patch `verbatim' on input line 196.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+Package scrbase Info: activating english \abstractname on input line 195.
+Package scrbase Info: activating english \partname on input line 195.
+Package scrbase Info: activating english \figurename on input line 195.
+Package scrbase Info: activating english \tablename on input line 195.
+Package scrbase Info: activating english \contentsname on input line 195.
+Package scrbase Info: activating english \listfigurename on input line 195.
+Package scrbase Info: activating english \listtablename on input line 195.
+Package scrbase Info: activating english \refname on input line 195.
+Package scrbase Info: activating english \indexname on input line 195.
+LaTeX Info: Redefining \microtypecontext on input line 195.
+Package microtype Info: Applying patch `item' on input line 195.
+Package microtype Info: Applying patch `toc' on input line 195.
+Package microtype Info: Applying patch `eqnum' on input line 195.
+Package microtype Info: Applying patch `footnote' on input line 195.
+Package microtype Info: Applying patch `verbatim' on input line 195.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 196.
+LaTeX Info: Redefining \showhyphens on input line 195.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
-
 (/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
@@ -1043,9 +1042,9 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 196.
+Package hyperref Info: Link coloring ON on input line 195.
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
-98.
+97.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1055,36 +1054,36 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-98.
+97.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-98.
+97.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-198.
+197.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-198.
+197.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 198.
+(Font)              <14.4> on input line 197.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 198.
+(Font)              <10> on input line 197.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 198.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 198
+(Font)              <7> on input line 197.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 197
 .
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1093,7 +1092,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 198
+LaTeX Font Info:    Trying to load font information for U+msb on input line 197
 .
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1106,75 +1105,97 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}] [2]
-</Users/oliviasaffioti/Desktop/Graph2bis.png, id=28, 1244.65pt x 881.2925pt>
-File: /Users/oliviasaffioti/Desktop/Graph2bis.png Graphic file (type png)
-<use /Users/oliviasaffioti/Desktop/Graph2bis.png>
-Package pdftex.def Info: /Users/oliviasaffioti/Desktop/Graph2bis.png  used on i
-nput line 331.
-(pdftex.def)             Requested size: 446.76323pt x 316.33719pt.
- [3] [4 </Users/oliviasaffioti/Desktop/Graph2bis.png>]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
-77.
+</Users/oliviasaffioti/Desktop/fas_1001_Saffioti/_tp/TP3/Graphique-TP3.png, id=
+25, 1489.565pt x 768.8725pt>
+File: /Users/oliviasaffioti/Desktop/fas_1001_Saffioti/_tp/TP3/Graphique-TP3.png
+ Graphic file (type png)
+<use /Users/oliviasaffioti/Desktop/fas_1001_Saffioti/_tp/TP3/Graphique-TP3.png>
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
+Package pdftex.def Info: /Users/oliviasaffioti/Desktop/fas_1001_Saffioti/_tp/TP
+3/Graphique-TP3.png  used on input line 330.
+(pdftex.def)             Requested size: 446.75931pt x 230.60486pt.
+ [3 </Users/oliviasaffioti/Desktop/fas_1001_Saffioti/_tp/TP3/Graphique-TP3.png>
+]
+Overfull \hbox (747.98134pt too wide) in paragraph at lines 401--404
+\T1/lmr/m/n/10.95 (-20) tions SAGE. https://books.google.ca/books?hl=en&lr=&id=
+x2w1BfJwRkAC&oi=fnd&pg=PR13&dq=gender+women+elections&ots=8RGQYfimmw&sig=Uo31w_
+YYAhrRtOEKSyA6ABiEeWw#v=onepage&q=gender%20women%20elections&f=false 
+ []
+
+[4]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
+19.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (13.13864pt too wide) in paragraph at lines 385--385
+Overfull \hbox (13.13864pt too wide) in paragraph at lines 439--439
 []\T1/lmtt/m/n/10.95 -- Attaching core tidyverse packages ---------------------
 --- tidyverse 2.0.0 --[] 
  []
 
 
-Overfull \hbox (13.13864pt too wide) in paragraph at lines 391--391
+Overfull \hbox (13.13864pt too wide) in paragraph at lines 448--448
 []\T1/lmtt/m/n/10.95 -- Conflicts ------------------------------------------ ti
 dyverse_conflicts() --[] 
  []
 
 
-Overfull \hbox (133.86205pt too wide) in paragraph at lines 394--394
+Overfull \hbox (133.86205pt too wide) in paragraph at lines 451--451
 []\T1/lmtt/m/n/10.95 i Use the conflicted package (<http://conflicted.r-lib.org
 />) to force all conflicts to become errors[] 
  []
 
+[5] [6] [7]
 LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
-445.
-(/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmtt.fd
+565.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmtt.fd
 File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [5]
-<TP2_FAS1001_Saffioti_files/figure-pdf/unnamed-chunk-1-1.pdf, id=51, 392.46625p
-t x 242.9075pt>
-File: TP2_FAS1001_Saffioti_files/figure-pdf/unnamed-chunk-1-1.pdf Graphic file 
+)
+Overfull \hbox (18.88737pt too wide) in paragraph at lines 565--565
+[]\T1/lmtt/m/n/10.95 DISCLAIMER: As of July 2023, \TS1/lmtt/m/n/10.95 `\T1/lmtt
+/m/n/10.95 clessnverse\TS1/lmtt/m/n/10.95 ` \T1/lmtt/m/n/10.95 is no longer und
+er active development.[] 
+ []
+
+
+Overfull \hbox (122.36458pt too wide) in paragraph at lines 566--566
+[]\T1/lmtt/m/n/10.95 To avoid breaking dependencies, the package remains availa
+ble "as is" with no warranty of any kind.[] 
+ []
+
+[8{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+<tp3-fas1001-Saffioti_files/figure-pdf/unnamed-chunk-2-1.pdf, id=70, 381.425pt 
+x 242.9075pt>
+File: tp3-fas1001-Saffioti_files/figure-pdf/unnamed-chunk-2-1.pdf Graphic file 
 (type pdf)
-<use TP2_FAS1001_Saffioti_files/figure-pdf/unnamed-chunk-1-1.pdf>
-Package pdftex.def Info: TP2_FAS1001_Saffioti_files/figure-pdf/unnamed-chunk-1-
-1.pdf  used on input line 453.
-(pdftex.def)             Requested size: 392.46527pt x 242.90689pt.
- [6{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 464.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 464.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 464.
- [7 <./TP2_FAS1001_Saffioti_files/figure-pdf/unnamed-chunk-1-1.pdf>] (./TP2_FAS
-1001_Saffioti.aux) ) 
+<use tp3-fas1001-Saffioti_files/figure-pdf/unnamed-chunk-2-1.pdf>
+Package pdftex.def Info: tp3-fas1001-Saffioti_files/figure-pdf/unnamed-chunk-2-
+1.pdf  used on input line 621.
+(pdftex.def)             Requested size: 381.42406pt x 242.90689pt.
+ [9 <./tp3-fas1001-Saffioti_files/figure-pdf/unnamed-chunk-2-1.pdf>]
+(./tp3-fas1001-Saffioti.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 32359 strings out of 476025
- 649058 string characters out of 5790017
- 1866388 words of memory out of 5000000
- 52145 multiletter control sequences out of 15000+600000
- 564745 words of font info for 132 fonts, out of 8000000 for 9000
+ 32314 strings out of 476025
+ 648661 string characters out of 5790017
+ 1869388 words of memory out of 5000000
+ 52127 multiletter control sequences out of 15000+600000
+ 552096 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,7n,106p,10615b,1031s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/l
-mr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></
-usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/
-texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/
-2023/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on TP2_FAS1001_Saffioti.pdf (7 pages, 213305 bytes).
+ 108i,8n,106p,10615b,1034s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/loc
+al/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/
+2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf
+-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fo
+nts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/
+public/lm/lmtti10.pfb>
+Output written on tp3-fas1001-Saffioti.pdf (9 pages, 222964 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 500000)
- 26695 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 141 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 20551 words of extra memory for PDF output out of 20736 (max. 10000000)
 
