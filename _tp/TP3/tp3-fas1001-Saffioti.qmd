@@ -1,5 +1,5 @@
 ---
-title: "Étude de l'impact du genre sur la saillance des thématiques politiques féminines dans le discours des politicien(ne)s"
+title: "Analyse de l'impact du genre sur la saillance des thématiques politiques féminines dans le discours des politicien(ne)s"
 author: "Olivia Saffioti"
 format: pdf
 editor: visual
