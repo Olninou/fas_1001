@@ -195,7 +195,7 @@ politiques féminines dans le discours des politicien(ne)s}
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, sharp corners, interior hidden, borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, breakable, enhanced]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, sharp corners, boxrule=0pt, interior hidden, breakable, enhanced, frame hidden]}{\end{tcolorbox}}\fi
 
 \hypertarget{introduction}{%
 \subsection{Introduction}\label{introduction}}
@@ -236,92 +236,81 @@ retranscription était facile d'accès. De plus, sélectionner un débat qui
 s'était produit après 2019 aurait biaisé nos résultats. En effet, la
 pandémie de Covid-19 demeurait un sujet très discuté par les politiciens
 durant les campagnes suivant 2019. Ce contexte temporel ne nous aurait
-pas permis de vérifier si les femmes parlaient davantage de la santé que
-les hommes. À travers ce débat nous vérifierons si madame Lepen a plus
-insisté sur les enjeux de l'éducation, de la famille, de l'État
-Providence et de la santé que monsieur Macron. Cela nous permettra de
-vérifier si les postulats de la théorie de la construction sociale du
-genre sont applicables à d'autres contextes. Pour ce faire, nous
-convertirons la retranscription pdf en une base de données. Puis, nous
-la nettoierons. Ensuite, nous élaborerons un dictionnaire que nous
-appliquerons à notre base de données. Afin de mieux visualiser et
-comprendre nos résultats, nous élaborerons un graphique.~
+pas permis de vérifier si les femmes politiques parlaient davantage de
+la santé que les hommes. À travers ce débat nous vérifierons si madame
+Le Pen a plus insisté sur les enjeux de l'éducation, de la famille, de
+l'État Providence et de la santé que monsieur Macron. Cela nous
+permettra de vérifier si les postulats de la théorie de la construction
+sociale du genre sont applicables à d'autres contextes. Pour ce faire,
+nous utiliserons la base de données portant sur le débat électoral entre
+Emmanuel Macron et Marine Le Pen de 2017 (Fréchet 2024). Puis, nous la
+nettoierons. Ensuite, nous élaborerons un dictionnaire. À partir de ce
+dernier, nous analyserons notre base de données. Afin de mieux
+visualiser et comprendre nos résultats, nous élaborerons un graphique.~
 
 \hypertarget{donnuxe9es-et-muxe9thode}{%
 \subsection{Données et méthode}\label{donnuxe9es-et-muxe9thode}}
 
 Afin de mener notre recherche, nous avons utilisé la base de données
 portant sur le débat présidentiel entre Marine Le Pen et Emmanuel Macron
-de 2017. Nous avons créé cette base de données à partir de la
-retranscription pdf du débat électoral (que nous avions trouvé sur le
-site internet ``vie-publique.fr''). Nous avons nettoyé le texte en
-supprimant des caractères indésirables (qui ont remplacé des alinéas,
-etc.). En utilisant les fonctions ``data.frame( )'', ``mutate ( )'',
-``str\_squish ( )'', ``str\_replace\_all ( )'', ``str\_extract\_all (
-)'', ``select( )',''unnest( )'' et ``slice ( )'', nous avons cherché les
-noms des intervenants dans le débat et avons créé la variable
-speaker\_name dans laquelle placer le nom des intervenants. Ensuite,
-nous avons sélectionné le texte et en avons fait une variable intitulée
-``text\_data''. Pour cela, nous avons mobilisé les fonctions
-``data.frame( )'', ``mutate( )'', ``str\_squish( )'',
-``str\_replace\_all( )'', ``str\_split( )'', ``unnest( )'', et ``slice(
-)''. Nous avons fusionné les données des noms des intervenants
-(speaker\_names) avec celles du texte afin de créer une nouvelle base de
-données. Dans cette nouvelle base de données, nous avons également créé
-une variable intitulée ``année'' pour y référer l'année du débat, une
-variable nommée ``pays'' pour y référer le pays où le débat a lieu, une
-variable intitulée ``id'' pour savoir à quel tour des élections le débat
-correspond, une variable nommée ``numéro d'intervention'' pour mettre en
-lumière l'ordre auquel les intervenants parlent, et une variable
-intitulée ``parti'' afin de référé le parti d'appertnance ou la
-profession des intervenants du débat. Pour ce faire, nous avons utilisé
-les fonctions ``bind\_cols( )'', ``mutate( )'', ``str\_replace\_all(
-)'', ``str\_squish( )'', ``case\_when( )'' et ``select( )''. Nous avons
-finalement enregistré notre nouvelle base de données dans notre
-ordinateur à l'aide de la fonction ``write\_csv( )''.
+de 2017. Cette base de données a été créé par monsieur Nadjim Fréchet,
+doctorant à l'Université de Montréal, et spécialiste en analyse
+quantitative. Elle contient plusieurs variables : une variable ``text''
+exposant le texte du débat, une variable ``speaker'' exposant le nom des
+intervenants du débat, une variable ``party'' indiquant le parti
+d'appartenance ou la profession des intervenants, une variable
+``speaker\_turn'' indiquant dans quel ordre les intervenants parlent,
+une variable ``id'' indiquant à quel tour des élections présidentielles
+correspond le débat, une variable ``year'' indiquant l'année du débat,
+une variable ``date'' indiquant la date précise du débat (jour, mois,
+année), et une variable ``country'' exposant le pays dans lequel le
+débat a eu lieu. Dans cette base de donnée, deux variables nous ont
+interessées : la variable ``text'' et la variable ``speaker''. Afin
+d'analyser cette base de données, nous l'avons tout d'abord importé sur
+Rstudio afin de la nettoyer et d'opérer une analyse de dictionnaire.
 
-Ensuite, nous avons importé cette base de données sur Rstudio afin de la
-nettoyer et d'opérer une analyse de dictionnaire. Dans un premier temps,
-nous avons créé notre dictionnaire afin de pouvoir analyser la fréquence
-de certains mots dans le discours des candidats. Personnaliser notre
-dictionnaire nous a permis de faire une analyse qui corrélait avec le
-contexte (les thématiques évoquées dans le débat) et notre sujet de
-recherche. Cela nous a permis de prendre en compte des mots spécifiques
-tels que ``protection sociale'' ou ``quotient''. Les mots du
-dictionnaire sont reliés aux thématiques ``féminines'' de l'éducation,
-de la santé, de la famille, et de l'État providence (lutte contre la
-pauvreté, etc.). Afin de créer le dictionnaire, nous avons mobilisé la
-fonction ``list( )'', et la fonction ``dictionnary( )''.
+Dans un premier temps, nous avons créé notre dictionnaire afin de
+pouvoir analyser la fréquence de certains mots dans le discours des
+candidats. Personnaliser notre dictionnaire nous a permis de faire une
+analyse qui corrélait avec le contexte (les thématiques évoquées dans le
+débat) et notre sujet de recherche. Nous avons pu prendre en compte des
+mots spécifiques tels que ``protection sociale'' ou ``quotient''. Les
+mots du dictionnaire sont reliés aux thématiques ``féminines'' de
+l'éducation, de la santé, de la famille, et de l'État providence (lutte
+contre la pauvreté, etc.). Afin de créer le dictionnaire, nous avons
+mobilisé la fonction ``list( )'', et la fonction ``dictionnary( )'' du
+package quanteda.
 
 Puis, nous avons nettoyé notre base de données : nous avons retiré les
 ponctuations du texte et converti le texte en minuscules. Cela nous
-permettait par la suite de faciliter notre analyse de dictionnaire (un
-mot présent dans notre dictionnaire en minuscules ne serait pas relevé
-par notre analyse de dictionnaire dans le texte s'il comprenait des
-majuscules par exemple). Pour cela, nous avons mobilisé les fonctions
-``tolower( )'' et ``gsub( )''. Nous avons disposé notre texte nettoyé
-dans une nouvelle colonne nommée ``text\_clean''. Ensuite, nous avons
-sélectionner les variables que nous voulions conserver dans notre base
-de données, afin de retirer les variables intules. Nous avons décidé de
-conserver les variables ``party'', ``text\_clean'' et ``speaker''. Dans
-la variable ``speaker'' nous avons conservé uniquement deux speakers
-(deux catégories) : ``Le Pen'' et ``Macron''. Nous avons choisi de les
-conserver car nous nous centrons uniquement sur ces deux candidats dans
-le cadre de notre étude. Pour cela, nous avons utilisé les fonctions
-``select( )'' et ``filter( )''. Ensuite, nous avons procédé à notre
-analyse de dictionnaire, et transféré les résultats dans une nouvelle
-base de données intitulée ``debat\_macron\_lepen\_resultat''. Pour ce
-faire, nous avons mobilisé la fonction ``run\_dictionary( )'', la
-fonction ``bind\_cols( )'', et la fonction ``select( )''. ''
-run\_dictionary( )'' nous a permis de ``rouler'' notre dictionnaire afin
-qu'il relève les mots dans le texte. La fonction bind\_cols a permis de
-conserver les colonnes présentes dans la base de données
-``debat\_macron\_lepen'', dans notre nouvelle base de données
-``debat\_macron\_lepen\_resultat''. La fonction select( ) nous a permis
-de sélectionner les colonnes de la base de données ``données
-debat\_macron\_lepen'' que nous ne voulions pas garder dans
+permettait par la suite de faciliter notre analyse de dictionnaire.
+Effectivement, un mot présent dans notre dictionnaire en minuscules
+risquerait de ne pas être détecté lors de notre analyse de dictionnaire
+si le texte comprend des majuscules. Les virgules pourraient également
+perturber l'analyse de dictionnaire. C'est pourquoi, nous avons mobilisé
+les fonctions ``tolower( )'' et ``gsub( )''. Nous avons disposé notre
+texte nettoyé dans une nouvelle colonne nommée ``text\_clean''. Ensuite,
+nous avons sélectionner les variables que nous voulions conserver dans
+notre base de données, afin de retirer les variables inutiles. Nous
+avons décidé de conserver les variables ``text\_clean'' et ``speaker''.
+Dans la variable ``speaker'' nous avons conservé uniquement deux
+speakers (deux catégories) : ``Le Pen'' et ``Macron''. Nous avons choisi
+de les conserver car nous nous centrons uniquement sur ces deux
+candidats dans le cadre de notre étude. Pour cela, nous avons utilisé
+les fonctions ``select( )'' et ``filter( )'' du package dplyr, présent
+dans le package tidyverse. Ensuite, nous avons procédé à notre analyse
+de dictionnaire, et transféré les résultats dans une nouvelle base de
+données intitulée ``debat\_macron\_lepen\_resultat''. Pour ce faire,
+nous avons mobilisé la fonction ``run\_dictionary( )'' issue du package
+clessnverse, la fonction ``bind\_cols( )'' et la fonction ``select( )''
+provenants du package dplyr. '' run\_dictionary( )'' nous a permis de
+``rouler'' notre dictionnaire afin qu'il relève les mots dans le texte.
+La fonction bind\_cols a permis de conserver les colonnes présentes dans
+la base de données ``debat\_macron\_lepen'', dans notre nouvelle base de
+données ``debat\_macron\_lepen\_resultat''. La fonction select( ) nous a
+permis de sélectionner les colonnes que nous ne voulions pas garder dans
 ``debat\_macron\_lepen\_resultat'' (ici, nous n'avons pas conservé la
-variable ``party'', et la variable ``doc\_id'').
+variable ``doc\_id'').
 
 \hypertarget{ruxe9sultats}{%
 \subsection{Résultats}\label{ruxe9sultats}}
@@ -336,7 +325,7 @@ variable ``party'', et la variable ``doc\_id'').
 
 \end{figure}
 
-Les résultats que nous avons obtenus indiquent que Marine Le Pen et
+Les résultats que nous avons obtenu indiquent que Marine Le Pen et
 Emmanuel Macron n'auraient pas insisté de la même manière sur les enjeux
 de la santé, de la famille, de l'État providence et de l'éducation. En
 effet, 49 mots liés à l'État providence ont été relevés dans le discours
@@ -367,12 +356,14 @@ n'est pas élevé. Les écarts de mots pour ces deux thématiques ne sont
 pas significatifs : ils ne démontrent pas que Macron aurait plus insisté
 que Lepen sur ces deux thématiques. En revanche, l'écart entre Macron et
 Lepen est plus prononcé concernant la thématique de l'éducation et de
-l'état providence. Par conséquent, Marine Le Pen semble, généralement,
-avoir davantage insisté sur les thématiques ``féminines'' par rapport à
-Emmanuel Macron. Donc, il semblerait que, dans le cas du débat
-présidentiel entre Emmanuel Macron et Marine Lepen de 2017, le postulat
-selon lequel les femmes politiques insisteraient davantage sur les
-thématiques ``féminines'' (santé, éducation, etc.) est validé.
+l'état providence. Lepen et Macron ont insisté de manière équivalente
+sur la santé et la famille, mais Lepen a plus insisté que Macron sur
+l'État providence et l'éducation. Par conséquent, Marine Le Pen semble,
+généralement, avoir davantage insisté sur les thématiques ``féminines''
+par rapport à Emmanuel Macron. Donc, il semblerait que, dans le cas du
+débat présidentiel entre Emmanuel Macron et Marine Lepen de 2017, le
+postulat selon lequel les femmes politiques insisteraient davantage sur
+les thématiques ``féminines'' (santé, éducation, etc.) soit validé.
 
 \hypertarget{conclusion}{%
 \subsection{Conclusion}\label{conclusion}}
@@ -393,8 +384,8 @@ thématiques dans le cadre d'autres débats électoraux. De surcroît, il
 aurait été pertinent d'étudier des débats électoraux incluant d'autres
 femmes issues de partis politiques différents. Cela aurait permis de
 contrôler pour le parti d'appartenance, et donc de vérifier si
-l'insistance sur les enjeux féminins dépend du parti politique des
-politicien(ne)s (et non du genre).
+l'insistance sur les enjeux féminins dépend de la ligne idéologique du
+parti politique des politicien(ne)s (et non du genre).
 
 \hypertarget{bibliographie}{%
 \subsection{Bibliographie}\label{bibliographie}}
@@ -408,6 +399,9 @@ Executive Elections: Candidate Selection and Success''. \emph{The
 Journal of Politics} 65 (3): 833-50.
 https://doi.org/10.1111/1468-2508.00214.
 
+Fréchet, Nadjim. 2024. \emph{Base de données portant sur le débat
+électoral entre Emmanuel Macron et Marine Le Pen de 2017}.
+
 Grebelsky-Lichtman, Tsfira, Roy Katz. 2019. '' When a man debates a
 woman : Trump vs.Clinton in the first mixed gender presidential debate
 ``. \emph{Revue Journal of Gender Studies} 28 (6): 699-719.
@@ -418,7 +412,7 @@ https://www.tandfonline.com/doi/full/10.1080/09589236.2019.1566890
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\CommentTok{\# Convertir le texte pdf en base de données csv : }
+\CommentTok{\# Codes de monsieur Nadjim Fréchet afin de convertir le texte pdf en base de données csv : }
 
 \DocumentationTok{\#\# Libraries}
 
@@ -584,12 +578,12 @@ To avoid breaking dependencies, the package remains available "as is" with no wa
 
 \DocumentationTok{\#\# Créer une nouvelle base de données en sélectionnant les variables utiles}
 
-\NormalTok{debat\_macron\_lepen }\OtherTok{\textless{}{-}}\NormalTok{debat\_macron\_lepen }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{select}\NormalTok{(speaker, text\_clean, party) }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{filter}\NormalTok{(speaker }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"Le Pen"}\NormalTok{, }\StringTok{"Macron"}\NormalTok{))}
+\NormalTok{debat\_macron\_lepen }\OtherTok{\textless{}{-}}\NormalTok{debat\_macron\_lepen }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{select}\NormalTok{(speaker, text\_clean) }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{filter}\NormalTok{(speaker }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"Le Pen"}\NormalTok{, }\StringTok{"Macron"}\NormalTok{))}
 
 
 \DocumentationTok{\#\# Appliquer le dictionnaire : }
 
-\NormalTok{debat\_macron\_lepen\_resultats }\OtherTok{\textless{}{-}} \FunctionTok{run\_dictionary}\NormalTok{(}\AttributeTok{data =}\NormalTok{ debat\_macron\_lepen, }\AttributeTok{text =}\NormalTok{ text\_clean, }\AttributeTok{dictionary =}\NormalTok{ Dictionnaire\_combiné) }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{bind\_cols}\NormalTok{(debat\_macron\_lepen) }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{select}\NormalTok{(}\SpecialCharTok{{-}}\FunctionTok{c}\NormalTok{(party, doc\_id))}
+\NormalTok{debat\_macron\_lepen\_resultats }\OtherTok{\textless{}{-}} \FunctionTok{run\_dictionary}\NormalTok{(}\AttributeTok{data =}\NormalTok{ debat\_macron\_lepen, }\AttributeTok{text =}\NormalTok{ text\_clean, }\AttributeTok{dictionary =}\NormalTok{ Dictionnaire\_combiné) }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{bind\_cols}\NormalTok{(debat\_macron\_lepen) }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{select}\NormalTok{(}\SpecialCharTok{{-}}\FunctionTok{c}\NormalTok{(doc\_id))}
 \end{Highlighting}
 \end{Shaded}
 
@@ -598,7 +592,7 @@ To avoid breaking dependencies, the package remains available "as is" with no wa
 \end{verbatim}
 
 \begin{verbatim}
-0.049 sec elapsed
+0.045 sec elapsed
 \end{verbatim}
 
 \begin{Shaded}
