@@ -6,6 +6,8 @@ date: 22 janvier 2024
 editor: visual
 ---
 
+------------------------------------------------------------------------
+
 ## Quarto
 
 Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
@@ -14,33 +16,13 @@ Quarto enables you to weave together content and executable code into a finished
 
 When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
 
-```{r}
-
-
-
-
-```
-
 You can add options to executable code like this
-
-```{figure}
-
-
-
-
-
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).
 
 # Description des codes Git utilisés
 
-## Images : 
+## Images :
 
-![git codes 1](//Users/oliviasaffioti/Desktop/fas_1001_Saffioti/_tp/Codes Git 1.png)
-![git codes 2](//Users/oliviasaffioti/Desktop/fas_1001_Saffioti/_tp/Codes Git 2.png)
-![git codes 3](//Users/oliviasaffioti/Desktop/fas_1001_Saffioti/_tp/Codes Git 3.png)
-## Étape 1 du TP :
+![git codes 1](//Users/oliviasaffioti/Desktop/fas_1001_Saffioti/_tp/Codes%20Git%201.png) ![git codes 2](//Users/oliviasaffioti/Desktop/fas_1001_Saffioti/_tp/Codes%20Git%202.png) ![git codes 3](//Users/oliviasaffioti/Desktop/fas_1001_Saffioti/_tp/Codes%20Git%203.png) \## Étape 1 du TP :
 
 ### Transférer le fichier de Github à notre ordinateur
 
