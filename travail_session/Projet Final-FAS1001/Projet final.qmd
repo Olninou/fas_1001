@@ -1,0 +1,68 @@
+---
+title: "Projet Final"
+format: pdf
+editor: visual
+---
+
+```{r}
+
+# Débat Sarkozy/ Royal
+
+library(pdftools)
+library(tidyverse)
+library(lubridate)
+
+#### 0.2 - Data ####
+
+text_1 <- suppressMessages(pdftools::pdf_text("/Users/oliviasaffioti/Desktop/fas_1001_Saffioti/travail_session/royale_sarkozy.pdf"))
+
+#### 0.3 - Settings ####
+
+split_vector <- paste0(c("Ségolène Royal :", "Nicolas Sarkozy :", " Arlette Chabot :", "Patrick Poivre d'Arvor :", "https"), collapse = "|")
+
+#### ___ ####
+
+# 1 - Nettoyage de code ----
+
+# 1.1 - Chercher les nom des personnes concernéés dans le débat ----
+
+
+speaker_names <- data.frame(text = paste0(text_1, collapse = " ")) |> mutate(text = str_squish(str_replace_all(text, c("[:punct:]C2[:punct:]AB"  = "", "[:punct:]C2[:punct:]BB"  = ""))), speaker = str_extract_all(text, split_vector)) |> select(-text) |> unnest(speaker)
+  
+# 1.2 - Données de prises de parole (text data) ----
+
+text_data <- data.frame(text = paste0(text_1, collapse = " ")) |> mutate(text = str_squish(str_replace_all(text, c("[:punct:]C2[:punct:]AB"  = "", "[:punct:]C2[:punct:]BB"  = "", "/n" = ""))), text = str_split(text, split_vector)) |> unnest(text) |>  slice(-c(1,806)) 
+
+# 1.3 - Fusion des deux variables clés et création de la base de données finale ----
+
+Data_debate_2007 <- bind_cols(speaker_names, text_data) |> 
+  ## Creation de variables et nettoyage ##
+  mutate(year         = 2007, 
+         date         = ymd("2007-05-02"), 
+         country      = "France", 
+         id           = "Débat présidentiel 2007 second-tour",
+         speaker_turn = 1:394,
+         speaker = str_squish(str_replace_all(speaker, c("Mme" = "",
+                                                         "^M." = "",
+                                                         ":"   = ""))),
+         party = case_when(speaker == "Ségolène Royal" ~ "parti socialiste",
+                           speaker == "Nicolas Sarkozy" ~ "les républicains",
+                           .default = "Journaliste")) |> 
+  select(id, year, date, country, speaker, speaker_turn, party, text)
+
+# 1.4 - Sauvegarde des données ----
+
+write_csv(Data_debate_2007, "/Users/oliviasaffioti/Desktop/fas_1001_Saffioti/projet Final-FAS1001/debat_2007_fr_data.csv")
+```
+
+```{r}
+# Débat hollande/sarkozy
+
+text_2 <- suppressMessages(pdftools::pdf_text("/Users/oliviasaffioti/Desktop/fas_1001_Saffioti/travail_session/hollande_sarkozy.pdf"))
+
+split_vector_2 <- paste0(c("François HOLLANDE :", "Nicolas SARKOZY:", " David PUJADAS :", "Laurence FERRARI :", "https"), collapse = "|")
+
+
+
+
+```
