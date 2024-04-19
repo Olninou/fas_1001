@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.13)  19 APR 2024 19:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.13)  19 APR 2024 19:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1123,8 +1123,8 @@ Overfull \hbox (10.93896pt too wide) in paragraph at lines 547--548
 [] 
  []
 
-[7]
-</Users/oliviasaffioti/Desktop/2.png, id=53, 1349.04pt x 963.6pt>
+[7 </Users/oliviasaffioti/Desktop/1.png>]
+</Users/oliviasaffioti/Desktop/2.png, id=59, 1349.04pt x 963.6pt>
 File: /Users/oliviasaffioti/Desktop/2.png Graphic file (type png)
 <use /Users/oliviasaffioti/Desktop/2.png>
 Package pdftex.def Info: /Users/oliviasaffioti/Desktop/2.png  used on input lin
@@ -1135,9 +1135,8 @@ Overfull \hbox (10.93896pt too wide) in paragraph at lines 566--567
 [][] 
  []
 
-[8 </Users/oliviasaffioti/Desktop/1.png>] [9 </Users/oliviasaffioti/Desktop/2.p
-ng>]
-</Users/oliviasaffioti/Desktop/3.png, id=69, 1349.04pt x 963.6pt>
+[8 </Users/oliviasaffioti/Desktop/2.png>]
+</Users/oliviasaffioti/Desktop/3.png, id=65, 1349.04pt x 963.6pt>
 File: /Users/oliviasaffioti/Desktop/3.png Graphic file (type png)
 <use /Users/oliviasaffioti/Desktop/3.png>
 Package pdftex.def Info: /Users/oliviasaffioti/Desktop/3.png  used on input lin
@@ -1148,7 +1147,7 @@ Overfull \hbox (10.93896pt too wide) in paragraph at lines 595--596
 [][] 
  []
 
-</Users/oliviasaffioti/Desktop/4.png, id=70, 1349.04pt x 963.6pt>
+</Users/oliviasaffioti/Desktop/4.png, id=66, 1349.04pt x 963.6pt>
 File: /Users/oliviasaffioti/Desktop/4.png Graphic file (type png)
 <use /Users/oliviasaffioti/Desktop/4.png>
 Package pdftex.def Info: /Users/oliviasaffioti/Desktop/4.png  used on input lin
@@ -1159,9 +1158,9 @@ Overfull \hbox (10.93896pt too wide) in paragraph at lines 609--610
 [][] 
  []
 
-[10 </Users/oliviasaffioti/Desktop/3.png>] [11 </Users/oliviasaffioti/Desktop/4
-.png>]
-</Users/oliviasaffioti/Desktop/5.png, id=81, 1349.04pt x 963.6pt>
+[9 </Users/oliviasaffioti/Desktop/3.png>] [10 </Users/oliviasaffioti/Desktop/4.
+png>]
+</Users/oliviasaffioti/Desktop/5.png, id=77, 1349.04pt x 963.6pt>
 File: /Users/oliviasaffioti/Desktop/5.png Graphic file (type png)
 <use /Users/oliviasaffioti/Desktop/5.png>
 Package pdftex.def Info: /Users/oliviasaffioti/Desktop/5.png  used on input lin
@@ -1172,8 +1171,8 @@ Overfull \hbox (10.93896pt too wide) in paragraph at lines 666--667
 [] 
  []
 
-[12] [13 </Users/oliviasaffioti/Desktop/5.png>]
-</Users/oliviasaffioti/Desktop/8.png, id=95, 1349.04pt x 963.6pt>
+[11] [12 </Users/oliviasaffioti/Desktop/5.png>]
+</Users/oliviasaffioti/Desktop/8.png, id=90, 1349.04pt x 963.6pt>
 File: /Users/oliviasaffioti/Desktop/8.png Graphic file (type png)
 <use /Users/oliviasaffioti/Desktop/8.png>
 Package pdftex.def Info: /Users/oliviasaffioti/Desktop/8.png  used on input lin
@@ -1184,8 +1183,8 @@ Overfull \hbox (10.93896pt too wide) in paragraph at lines 697--698
 [][] 
  []
 
-[14 </Users/oliviasaffioti/Desktop/8.png>]
-</Users/oliviasaffioti/Desktop/6.png, id=101, 1349.04pt x 963.6pt>
+[13 </Users/oliviasaffioti/Desktop/8.png>]
+</Users/oliviasaffioti/Desktop/6.png, id=97, 1349.04pt x 963.6pt>
 File: /Users/oliviasaffioti/Desktop/6.png Graphic file (type png)
 <use /Users/oliviasaffioti/Desktop/6.png>
 Package pdftex.def Info: /Users/oliviasaffioti/Desktop/6.png  used on input lin
@@ -1196,8 +1195,8 @@ Overfull \hbox (10.93896pt too wide) in paragraph at lines 721--722
 [][] 
  []
 
-[15 </Users/oliviasaffioti/Desktop/6.png>]
-</Users/oliviasaffioti/Desktop/7.png, id=107, 1349.04pt x 963.6pt>
+[14 </Users/oliviasaffioti/Desktop/6.png>]
+</Users/oliviasaffioti/Desktop/7.png, id=103, 1349.04pt x 963.6pt>
 File: /Users/oliviasaffioti/Desktop/7.png Graphic file (type png)
 <use /Users/oliviasaffioti/Desktop/7.png>
 Package pdftex.def Info: /Users/oliviasaffioti/Desktop/7.png  used on input lin
@@ -1208,14 +1207,14 @@ Overfull \hbox (10.93896pt too wide) in paragraph at lines 754--755
 [] 
  []
 
-[16 </Users/oliviasaffioti/Desktop/7.png>]
+[15 </Users/oliviasaffioti/Desktop/7.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 824.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 824.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 824.
- [17] [18]
+ [16] [17]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 9
 10.
 
@@ -1233,13 +1232,13 @@ Overfull \hbox (13.13864pt too wide) in paragraph at lines 939--939
 dyverse_conflicts() --[] 
  []
 
-[19]
+[18]
 Overfull \hbox (133.86205pt too wide) in paragraph at lines 942--942
 []\T1/lmtt/m/n/10.95 i Use the conflicted package (<http://conflicted.r-lib.org
 />) to force all conflicts to become errors[] 
  []
 
-[20] [21]
+[19] [20]
 LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
 1046.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmtt.fd
@@ -1257,9 +1256,9 @@ Overfull \hbox (122.36458pt too wide) in paragraph at lines 1047--1047
 ble "as is" with no warranty of any kind.[] 
  []
 
-[22{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] [23]
-[24]
-<Travail-Session_files/figure-pdf/unnamed-chunk-2-1.pdf, id=190, 381.425pt x 24
+[21{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] [22]
+[23]
+<Travail-Session_files/figure-pdf/unnamed-chunk-2-1.pdf, id=186, 381.425pt x 24
 2.9075pt>
 File: Travail-Session_files/figure-pdf/unnamed-chunk-2-1.pdf Graphic file (type
  pdf)
@@ -1267,7 +1266,7 @@ File: Travail-Session_files/figure-pdf/unnamed-chunk-2-1.pdf Graphic file (type
 Package pdftex.def Info: Travail-Session_files/figure-pdf/unnamed-chunk-2-1.pdf
   used on input line 1229.
 (pdftex.def)             Requested size: 381.42406pt x 242.90689pt.
-<Travail-Session_files/figure-pdf/unnamed-chunk-2-2.pdf, id=191, 381.425pt x 24
+<Travail-Session_files/figure-pdf/unnamed-chunk-2-2.pdf, id=187, 381.425pt x 24
 2.9075pt>
 File: Travail-Session_files/figure-pdf/unnamed-chunk-2-2.pdf Graphic file (type
  pdf)
@@ -1275,8 +1274,8 @@ File: Travail-Session_files/figure-pdf/unnamed-chunk-2-2.pdf Graphic file (type
 Package pdftex.def Info: Travail-Session_files/figure-pdf/unnamed-chunk-2-2.pdf
   used on input line 1245.
 (pdftex.def)             Requested size: 381.42406pt x 242.90689pt.
- [25 <./Travail-Session_files/figure-pdf/unnamed-chunk-2-1.pdf>]
-<Travail-Session_files/figure-pdf/unnamed-chunk-2-3.pdf, id=205, 381.425pt x 24
+ [24 <./Travail-Session_files/figure-pdf/unnamed-chunk-2-1.pdf>]
+<Travail-Session_files/figure-pdf/unnamed-chunk-2-3.pdf, id=200, 381.425pt x 24
 2.9075pt>
 File: Travail-Session_files/figure-pdf/unnamed-chunk-2-3.pdf Graphic file (type
  pdf)
@@ -1284,9 +1283,9 @@ File: Travail-Session_files/figure-pdf/unnamed-chunk-2-3.pdf Graphic file (type
 Package pdftex.def Info: Travail-Session_files/figure-pdf/unnamed-chunk-2-3.pdf
   used on input line 1261.
 (pdftex.def)             Requested size: 381.42406pt x 242.90689pt.
- [26 <./Travail-Session_files/figure-pdf/unnamed-chunk-2-2.pdf> <./Travail-Sess
+ [25 <./Travail-Session_files/figure-pdf/unnamed-chunk-2-2.pdf> <./Travail-Sess
 ion_files/figure-pdf/unnamed-chunk-2-3.pdf>]
-<Travail-Session_files/figure-pdf/unnamed-chunk-2-4.pdf, id=226, 381.425pt x 24
+<Travail-Session_files/figure-pdf/unnamed-chunk-2-4.pdf, id=222, 381.425pt x 24
 2.9075pt>
 File: Travail-Session_files/figure-pdf/unnamed-chunk-2-4.pdf Graphic file (type
  pdf)
@@ -1294,7 +1293,7 @@ File: Travail-Session_files/figure-pdf/unnamed-chunk-2-4.pdf Graphic file (type
 Package pdftex.def Info: Travail-Session_files/figure-pdf/unnamed-chunk-2-4.pdf
   used on input line 1277.
 (pdftex.def)             Requested size: 381.42406pt x 242.90689pt.
-<Travail-Session_files/figure-pdf/unnamed-chunk-2-5.pdf, id=227, 381.425pt x 24
+<Travail-Session_files/figure-pdf/unnamed-chunk-2-5.pdf, id=223, 381.425pt x 24
 2.9075pt>
 File: Travail-Session_files/figure-pdf/unnamed-chunk-2-5.pdf Graphic file (type
  pdf)
@@ -1302,7 +1301,7 @@ File: Travail-Session_files/figure-pdf/unnamed-chunk-2-5.pdf Graphic file (type
 Package pdftex.def Info: Travail-Session_files/figure-pdf/unnamed-chunk-2-5.pdf
   used on input line 1295.
 (pdftex.def)             Requested size: 381.42406pt x 242.90689pt.
- [27 <./Travail-Session_files/figure-pdf/unnamed-chunk-2-4.pdf>]
+ [26 <./Travail-Session_files/figure-pdf/unnamed-chunk-2-4.pdf>]
 Overfull \hbox (1.64117pt too wide) in paragraph at lines 1314--1314
 []\TS1/lmtt/m/n/10.95 `\T1/lmtt/m/n/10.95 summarise()\TS1/lmtt/m/n/10.95 ` \T1/
 lmtt/m/n/10.95 has grouped output by \TS1/lmtt/m/n/10.95 '\T1/lmtt/m/n/10.95 id
@@ -1316,7 +1315,7 @@ Overfull \hbox (7.38991pt too wide) in paragraph at lines 1327--1327
    "Sarkozy_Hollande"[] 
  []
 
-<Travail-Session_files/figure-pdf/unnamed-chunk-2-6.pdf, id=240, 392.46625pt x 
+<Travail-Session_files/figure-pdf/unnamed-chunk-2-6.pdf, id=236, 392.46625pt x 
 240.9pt>
 File: Travail-Session_files/figure-pdf/unnamed-chunk-2-6.pdf Graphic file (type
  pdf)
@@ -1324,8 +1323,8 @@ File: Travail-Session_files/figure-pdf/unnamed-chunk-2-6.pdf Graphic file (type
 Package pdftex.def Info: Travail-Session_files/figure-pdf/unnamed-chunk-2-6.pdf
   used on input line 1340.
 (pdftex.def)             Requested size: 392.47723pt x 240.90674pt.
-[28 <./Travail-Session_files/figure-pdf/unnamed-chunk-2-5.pdf>]
-<Travail-Session_files/figure-pdf/unnamed-chunk-2-7.pdf, id=253, 392.46625pt x 
+[27 <./Travail-Session_files/figure-pdf/unnamed-chunk-2-5.pdf>]
+<Travail-Session_files/figure-pdf/unnamed-chunk-2-7.pdf, id=249, 392.46625pt x 
 242.9075pt>
 File: Travail-Session_files/figure-pdf/unnamed-chunk-2-7.pdf Graphic file (type
  pdf)
@@ -1333,8 +1332,8 @@ File: Travail-Session_files/figure-pdf/unnamed-chunk-2-7.pdf Graphic file (type
 Package pdftex.def Info: Travail-Session_files/figure-pdf/unnamed-chunk-2-7.pdf
   used on input line 1375.
 (pdftex.def)             Requested size: 392.46527pt x 242.90689pt.
- [29 <./Travail-Session_files/figure-pdf/unnamed-chunk-2-6.pdf>]
-<Travail-Session_files/figure-pdf/unnamed-chunk-2-8.pdf, id=266, 381.425pt x 24
+ [28 <./Travail-Session_files/figure-pdf/unnamed-chunk-2-6.pdf>]
+<Travail-Session_files/figure-pdf/unnamed-chunk-2-8.pdf, id=262, 381.425pt x 24
 0.9pt>
 File: Travail-Session_files/figure-pdf/unnamed-chunk-2-8.pdf Graphic file (type
  pdf)
@@ -1342,8 +1341,8 @@ File: Travail-Session_files/figure-pdf/unnamed-chunk-2-8.pdf Graphic file (type
 Package pdftex.def Info: Travail-Session_files/figure-pdf/unnamed-chunk-2-8.pdf
   used on input line 1411.
 (pdftex.def)             Requested size: 381.43568pt x 240.90674pt.
- [30 <./Travail-Session_files/figure-pdf/unnamed-chunk-2-7.pdf>]
-<Travail-Session_files/figure-pdf/unnamed-chunk-2-9.pdf, id=279, 392.46625pt x 
+ [29 <./Travail-Session_files/figure-pdf/unnamed-chunk-2-7.pdf>]
+<Travail-Session_files/figure-pdf/unnamed-chunk-2-9.pdf, id=275, 392.46625pt x 
 240.9pt>
 File: Travail-Session_files/figure-pdf/unnamed-chunk-2-9.pdf Graphic file (type
  pdf)
@@ -1351,7 +1350,7 @@ File: Travail-Session_files/figure-pdf/unnamed-chunk-2-9.pdf Graphic file (type
 Package pdftex.def Info: Travail-Session_files/figure-pdf/unnamed-chunk-2-9.pdf
   used on input line 1427.
 (pdftex.def)             Requested size: 392.47723pt x 240.90674pt.
- [31 <./Travail-Session_files/figure-pdf/unnamed-chunk-2-8.pdf> <./Travail-Sess
+ [30 <./Travail-Session_files/figure-pdf/unnamed-chunk-2-8.pdf> <./Travail-Sess
 ion_files/figure-pdf/unnamed-chunk-2-9.pdf>]
 Overfull \hbox (1.64117pt too wide) in paragraph at lines 1442--1442
 []\TS1/lmtt/m/n/10.95 `\T1/lmtt/m/n/10.95 summarise()\TS1/lmtt/m/n/10.95 ` \T1/
@@ -1360,7 +1359,7 @@ lmtt/m/n/10.95 has grouped output by \TS1/lmtt/m/n/10.95 '\T1/lmtt/m/n/10.95 id
 m/n/10.95 `\T1/lmtt/m/n/10.95 .groups\TS1/lmtt/m/n/10.95 `[] 
  []
 
-<Travail-Session_files/figure-pdf/unnamed-chunk-2-10.pdf, id=302, 392.46625pt x
+<Travail-Session_files/figure-pdf/unnamed-chunk-2-10.pdf, id=297, 392.46625pt x
  242.9075pt>
 File: Travail-Session_files/figure-pdf/unnamed-chunk-2-10.pdf Graphic file (typ
 e pdf)
@@ -1368,16 +1367,16 @@ e pdf)
 Package pdftex.def Info: Travail-Session_files/figure-pdf/unnamed-chunk-2-10.pd
 f  used on input line 1464.
 (pdftex.def)             Requested size: 392.46527pt x 242.90689pt.
-[32 <./Travail-Session_files/figure-pdf/unnamed-chunk-2-10.pdf>]
+[31 <./Travail-Session_files/figure-pdf/unnamed-chunk-2-10.pdf>]
 (./Travail-Session.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 32614 strings out of 476025
- 656809 string characters out of 5790017
- 1876388 words of memory out of 5000000
+ 32613 strings out of 476025
+ 656802 string characters out of 5790017
+ 1875388 words of memory out of 5000000
  52303 multiletter control sequences out of 15000+600000
  572623 words of font info for 153 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1389,10 +1388,10 @@ al/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/
 nts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type
 1/public/lm/lmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/l
 m/lmtti10.pfb>
-Output written on Travail-Session.pdf (32 pages, 880689 bytes).
+Output written on Travail-Session.pdf (31 pages, 879109 bytes).
 PDF statistics:
- 400 PDF objects out of 1000 (max. 8388607)
- 301 compressed objects within 4 object streams
- 73 named destinations out of 1000 (max. 500000)
+ 393 PDF objects out of 1000 (max. 8388607)
+ 296 compressed objects within 3 object streams
+ 72 named destinations out of 1000 (max. 500000)
  30903 words of extra memory for PDF output out of 35830 (max. 10000000)
 

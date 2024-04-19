@@ -1,7 +1,6 @@
 ---
 title: "Projet final : L'impact du genre sur la saillance des thématiques politiques féminines au sein des débats électoraux"
 author: Olivia Saffioti
-date: 19-04-2024
 format: pdf
 editor: visual
 ---
