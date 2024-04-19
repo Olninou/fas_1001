@@ -31,8 +31,7 @@ Pour conclure, nous avons mené du web-scraping afin d'importer une base de donn
 
 ## Bibliographie
 
-Alexander, Rohan. 2023. Telling Stories with Data: With Applications in R. Chapman;
-Hall/CRC. <https://tellingstorieswithdata.com/07-gather.html>
+Alexander, Rohan. 2023. Telling Stories with Data: With Applications in R. Chapman; Hall/CRC. <https://tellingstorieswithdata.com/07-gather.html>
 
 Cantú F., Carreras, M. 2023. "Presidential Debates and Electoral Preferences in Weakly Institutionalised Democracies: Evidence From 32 Latin American Elections". *Journal of Politics in Latin America* 15(3) : 239-261. <https://doi.org/10.1177/1866802X231213668>
 
